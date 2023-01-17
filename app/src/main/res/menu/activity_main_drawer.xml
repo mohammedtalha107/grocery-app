@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+<item android:title="Your grocers">
+    <menu>
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/homeicon"
+            android:title="Shop" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/usericon"
+            android:title="Profile" />
+
+        <item
+            android:id="@+id/nav_cart"
+            android:icon="@drawable/carticon"
+            android:title="Cart" />
+        <item
+            android:id="@+id/nav_orders"
+            android:icon="@drawable/ic_baseline_shopping_basket_24"
+            android:title="Orders" />
+    </menu>
+</item>
+
+<item android:title="Extras">
+    <menu>
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/logouticon"
+            android:title="Logout"
+            />
+        <item
+            android:id="@+id/nav_About"
+            android:icon="@drawable/abouticon"
+            android:title="About" />
+    </menu>
+</item>
+</menu>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cards"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@drawable/cardsstyle"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/editorder"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="307dp"
+        android:layout_marginTop="89dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/ic_baseline_delete_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/orderdate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/cardstylegreen"
+
+        android:padding="10dp"
+        android:text="date"
+        android:textAlignment="center"
+        android:textColor="@color/light"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/itemlist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="7dp"
+        android:text="items"
+        android:textColor="#50BF20"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/cartprice"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/orderdate"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/cartprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="7dp"
+        android:text="grandtotal"
+        android:textColor="#50BF20"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/shipstatus"
+        app:layout_constraintStart_toStartOf="@+id/itemlist"
+        app:layout_constraintTop_toBottomOf="@+id/itemlist"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/shipstatus"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/cardstylegreen"
+        android:text="status"
+        android:textAlignment="center"
+        android:textColor="@color/light"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cartprice"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>

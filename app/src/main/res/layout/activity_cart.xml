@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorAccent"
+    tools:context=".cart" >
+    <ImageView
+        android:id="@+id/cartpic"
+        android:layout_width="210dp"
+        android:layout_height="210dp"
+        android:background="@drawable/cartpicstyle"
+        android:layout_gravity="center"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/cartitem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/light"
+        android:layout_gravity="center"
+        android:text="TextView"
+        android:textSize="30dp"
+        android:layout_margin="5dp"
+        tools:layout_editor_absoluteX="177dp"
+        tools:layout_editor_absoluteY="75dp" />
+
+    <TextView
+        android:id="@+id/cartprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/light"
+        android:layout_margin="5dp"
+        android:layout_gravity="center"
+        android:textSize="25dp"
+        android:text="Price" />
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:padding="10dp">
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+       android:layout_marginTop="10dp"
+        android:text="Quantity(kg)"
+        android:textColor="@color/light"
+        android:textSize="25dp" />
+
+    <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+        android:id="@+id/quantity"
+        android:layout_width="112dp"
+        android:layout_height="39dp"
+        android:layout_marginLeft="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        app:textSize="10dp"
+        app:initialNumber="1"
+        app:finalNumber="5">
+
+    </com.cepheuen.elegantnumberbutton.view.ElegantNumberButton>
+
+
+</RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ProgressBar
+            android:id="@+id/addtocartpb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/whiteround"
+            android:visibility="invisible"
+            />
+    </LinearLayout>
+    <Button
+        android:id="@+id/addtocart"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:background="@drawable/buttonstyle"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:textColor="@color/colorAccent"
+        android:text="Add to cart" />
+
+</LinearLayout>

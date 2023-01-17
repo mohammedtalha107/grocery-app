@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.madproject">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".orderSuccess"></activity>
+        <activity
+            android:name=".splashscreen"
+            android:theme="@style/AppTheme.welcomepage">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".otp" />
+        <activity
+            android:name=".orders"
+            android:parentActivityName=".navdraw"
+            android:theme="@style/AppTheme.normal" />
+        <activity
+            android:name=".confirmFinalOrder"
+            android:parentActivityName=".Viewcart"
+            android:theme="@style/AppTheme.normal" />
+        <activity
+            android:name=".Viewcart"
+            android:parentActivityName=".navdraw"
+            android:theme="@style/AppTheme.normal" />
+        <activity
+            android:name=".Vieweditcart"
+            android:parentActivityName=".Viewcart"
+            android:theme="@style/AppTheme.normal" />
+        <activity
+            android:name=".cart"
+            android:parentActivityName=".PostListActivity"
+            android:theme="@style/AppTheme.normal" />
+        <activity
+            android:name=".PostListActivity"
+            android:parentActivityName=".navdraw"
+            android:theme="@style/AppTheme.normal" />
+        <activity
+            android:name=".navdraw"
+            android:label="@string/title_activity_navdraw"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".profile"
+            android:parentActivityName=".navdraw"
+            android:theme="@style/AppTheme.normal" />
+        <activity android:name=".Register" />
+        <activity android:name=".payment" />
+        <activity
+            android:name=".homepage"
+            android:parentActivityName=".navdraw"
+            android:theme="@style/AppTheme.normal" />
+        <activity
+            android:name=".login"
+            android:theme="@style/AppTheme.loginstyle" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.welcomepage"></activity>
+    </application>
+
+</manifest>

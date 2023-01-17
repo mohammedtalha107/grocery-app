@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cards"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/cardsstyle"
+    android:layout_margin="5dp"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/cartimgurl"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        tools:layout_editor_absoluteX="139dp"
+        tools:layout_editor_absoluteY="58dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/itemcartname"
+        android:textColor="#50BF20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textSize="30dp"
+        android:layout_marginLeft="120dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+
+    <TextView
+        android:id="@+id/cartprice"
+        android:textColor="#50BF20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price"
+        android:textSize="20dp"
+
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="120dp"
+        tools:layout_editor_absoluteX="139dp"
+        tools:layout_editor_absoluteY="58dp"
+        tools:ignore="MissingConstraints" />
+    <TextView
+        android:id="@+id/cartquantity"
+        android:textColor="#50BF20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantity"
+        android:textSize="20dp"
+
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="120dp"
+        tools:layout_editor_absoluteX="139dp"
+        tools:layout_editor_absoluteY="58dp"
+        tools:ignore="MissingConstraints" />
+    <ImageView
+        android:id="@+id/cartdelete"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="280dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_baseline_delete_24"/>
+</RelativeLayout>
